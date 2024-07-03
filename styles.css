@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -8,26 +8,49 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #0073b1;
     color: #fff;
-    padding: 1rem 0;
+    padding: 2rem 0;
     text-align: center;
+}
+
+header .container {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 header h1 {
     margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.socials a {
+    color: #fff;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.socials a:hover {
+    color: #ffdd57;
 }
 
 section {
-    margin: 1rem auto;
-    padding: 1rem;
-    max-width: 800px;
+    padding: 2rem 1rem;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 800px;
 }
 
 section h2 {
-    color: #4CAF50;
+    color: #0073b1;
+    margin-bottom: 1rem;
 }
 
 ul {
@@ -36,12 +59,36 @@ ul {
 }
 
 ul li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 footer {
+    background-color: #0073b1;
+    color: #fff;
     text-align: center;
     padding: 1rem 0;
-    background-color: #4CAF50;
-    color: #fff;
+}
+
+footer .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .socials a {
+        font-size: 1.2rem;
+    }
+
+    section {
+        padding: 1rem;
+        margin: 1rem auto;
+    }
 }
